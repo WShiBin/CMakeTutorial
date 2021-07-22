@@ -1,0 +1,6 @@
+c++ -o archive.o -c archive.cpp
+c++ -o serialization.o -c serialization.cpp
+c++ -DUSING_ARCHIVE_LIB -DUSING_SERIALIZATION_LIB -o extras.o -c extras.cpp
+
+c++ -DUSING_ARCHIVE_LIB -o consumer.o -c consumer.cpp
+c++  -o consumer libarchiveExtras.a libarchive.a libserialization.a

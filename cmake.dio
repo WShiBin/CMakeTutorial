@@ -1,0 +1,234 @@
+<mxfile>
+    <diagram id="C9Nli58RZnMgzdXSajgY" name="00-CMake -  build system generator">
+        <mxGraphModel dx="984" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="21" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C2C2C2;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="190" width="160" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="CMake项目" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="370" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="470" y="400" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="CMake&lt;br&gt;(cmake .. 命令)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="370" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="VS项目结构" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Makefile项目结构&lt;br&gt;(make 命令)&lt;br&gt;(Linux下默认)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="210" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Ninja项目结构" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="XCode项目结构" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="370" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Other&lt;br&gt;(cmake --help查看)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="530" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;&lt;b&gt;命令&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;$ mkdir build &amp;amp;&amp;amp; cd build&lt;br&gt;$ cmake ..&lt;br&gt;$ make" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="220" width="180" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="&lt;span class=&quot;md-plain md-expand&quot; style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;open sans&amp;quot;, &amp;quot;clear sans&amp;quot;, &amp;quot;helvetica neue&amp;quot;, helvetica, arial, sans-serif; font-size: 16px; font-style: normal; font-weight: normal; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; text-decoration: none;&quot;&gt;build system &lt;/span&gt;&lt;span class=&quot;md-pair-s md-expand&quot; style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;quot;open sans&amp;quot;, &amp;quot;clear sans&amp;quot;, &amp;quot;helvetica neue&amp;quot;, helvetica, arial, sans-serif; font-size: 16px; font-style: normal; font-weight: normal; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; text-decoration: none;&quot;&gt;&lt;strong style=&quot;box-sizing: border-box&quot;&gt;&lt;span class=&quot;md-plain&quot; style=&quot;box-sizing: border-box&quot;&gt;generator&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="450" width="160" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="1an1YaJBxX8KDuZ7NSQ9" name="01 hello world">
+        &#xa;        &#xa;&#xa;
+        <mxGraphModel dx="984" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            &#xa;            &#xa;&#xa;
+            <root>
+                &#xa;                &#xa;&#xa;
+                <mxCell id="bFLvUjO2IDFVvJimZA5_-0"/>
+                &#xa;                &#xa;&#xa;
+                <mxCell id="bFLvUjO2IDFVvJimZA5_-1" parent="bFLvUjO2IDFVvJimZA5_-0"/>
+                &#xa;                &#xa;&#xa;
+                <mxCell id="zytTHaiZ7KpRNnPbkYl3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="bFLvUjO2IDFVvJimZA5_-1" source="zytTHaiZ7KpRNnPbkYl3-2" target="zytTHaiZ7KpRNnPbkYl3-8">
+                    &#xa;                    &#xa;&#xa;
+                    <mxGeometry relative="1" as="geometry"/>
+                    &#xa;                    &#xa;&#xa;
+                </mxCell>
+                &#xa;                &#xa;&#xa;
+                <mxCell id="zytTHaiZ7KpRNnPbkYl3-2" value="CMake项目" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="bFLvUjO2IDFVvJimZA5_-1">
+                    &#xa;                    &#xa;&#xa;
+                    <mxGeometry x="150" y="370" width="120" height="60" as="geometry"/>
+                    &#xa;                    &#xa;&#xa;
+                </mxCell>
+                &#xa;                &#xa;&#xa;
+                <mxCell id="zytTHaiZ7KpRNnPbkYl3-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="bFLvUjO2IDFVvJimZA5_-1" source="zytTHaiZ7KpRNnPbkYl3-8" target="zytTHaiZ7KpRNnPbkYl3-10">
+                    &#xa;                    &#xa;&#xa;
+                    <mxGeometry relative="1" as="geometry"/>
+                    &#xa;                    &#xa;&#xa;
+                </mxCell>
+                &#xa;                &#xa;&#xa;
+                <mxCell id="zytTHaiZ7KpRNnPbkYl3-8" value="CMake&lt;br&gt;(cmake .. 命令)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="bFLvUjO2IDFVvJimZA5_-1">
+                    &#xa;                    &#xa;&#xa;
+                    <mxGeometry x="350" y="370" width="120" height="60" as="geometry"/>
+                    &#xa;                    &#xa;&#xa;
+                </mxCell>
+                &#xa;                &#xa;&#xa;
+                <mxCell id="Q9MAaqmSeVpuE1xy8EKc-1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bFLvUjO2IDFVvJimZA5_-1" source="zytTHaiZ7KpRNnPbkYl3-10" target="Q9MAaqmSeVpuE1xy8EKc-0">
+                    &#xa;                    &#xa;&#xa;
+                    <mxGeometry relative="1" as="geometry"/>
+                    &#xa;                    &#xa;&#xa;
+                </mxCell>
+                &#xa;                &#xa;&#xa;
+                <mxCell id="zytTHaiZ7KpRNnPbkYl3-10" value="Makefile项目结构&lt;br&gt;(make 命令)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="bFLvUjO2IDFVvJimZA5_-1">
+                    &#xa;                    &#xa;&#xa;
+                    <mxGeometry x="550" y="370" width="120" height="60" as="geometry"/>
+                    &#xa;                    &#xa;&#xa;
+                </mxCell>
+                &#xa;                &#xa;&#xa;
+                <mxCell id="zytTHaiZ7KpRNnPbkYl3-14" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;&lt;b&gt;命令&lt;/b&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left&quot;&gt;$ mkdir build &amp;amp;&amp;amp; cd build&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;$ cmake ..&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;$ make&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;$ ./helloworld&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;hello cmake&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="bFLvUjO2IDFVvJimZA5_-1">
+                    &#xa;                    &#xa;&#xa;
+                    <mxGeometry x="450" y="250" width="135" height="90" as="geometry"/>
+                    &#xa;                    &#xa;&#xa;
+                </mxCell>
+                &#xa;                &#xa;&#xa;
+                <mxCell id="Q9MAaqmSeVpuE1xy8EKc-0" value="helloworld 可执行文件&lt;br&gt;(&lt;span style=&quot;color: rgb(0 , 0 , 0) ; text-align: left&quot;&gt;&amp;nbsp;./helloworld&lt;/span&gt;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="bFLvUjO2IDFVvJimZA5_-1">
+                    &#xa;                    &#xa;&#xa;
+                    <mxGeometry x="750" y="370" width="130" height="60" as="geometry"/>
+                    &#xa;                    &#xa;&#xa;
+                </mxCell>
+                &#xa;                &#xa;&#xa;
+            </root>
+            &#xa;            &#xa;&#xa;
+        </mxGraphModel>
+        &#xa;        &#xa;&#xa;
+    </diagram>
+    <diagram id="t6gsJdvFI2HioqtL7JoJ" name="03 Transitive Usage Requirements">
+        <mxGraphModel dx="1378" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-0"/>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-1" parent="Ke54nc799Cu7f-K-FsO3-0"/>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-28" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#CCCCCC;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="190" y="471" width="725" height="157.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-2" value="archive&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="740" y="1030" width="270" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-3" value="serialization&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="740" y="1130" width="270" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-5" value="public" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ke54nc799Cu7f-K-FsO3-1" source="Ke54nc799Cu7f-K-FsO3-4" target="Ke54nc799Cu7f-K-FsO3-2" edge="1">
+                    <mxGeometry x="160" y="910" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ke54nc799Cu7f-K-FsO3-1" source="Ke54nc799Cu7f-K-FsO3-4" target="Ke54nc799Cu7f-K-FsO3-3" edge="1">
+                    <mxGeometry x="160" y="910" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-7" value="private" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Ke54nc799Cu7f-K-FsO3-6" vertex="1" connectable="0">
+                    <mxGeometry x="-0.016" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-4" value="archiveExtras&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="420" y="1080" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-9" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ke54nc799Cu7f-K-FsO3-1" source="Ke54nc799Cu7f-K-FsO3-8" target="Ke54nc799Cu7f-K-FsO3-4" edge="1">
+                    <mxGeometry x="160" y="910" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-8" value="consumer&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="160" y="1080" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pkhNUyzVfa8_4iN3zCDY-0" value="&lt;div&gt;&lt;b&gt;输出编译命令:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;c++ -o serialization.o -c serialization.cpp&lt;/div&gt;&lt;div&gt;c++ -o archive.o -c archive.cpp&lt;/div&gt;&lt;div&gt;c++ -D&lt;font color=&quot;#ff3333&quot;&gt;USING_ARCHIVE_LIB&lt;/font&gt; -D&lt;font color=&quot;#ff3333&quot;&gt;USING_SERIALIZATION_LIB&lt;/font&gt; -o extras.o -c extras.cpp&lt;/div&gt;&lt;div&gt;c++ -D&lt;font color=&quot;#ff3333&quot;&gt;USING_ARCHIVE_LIB&lt;/font&gt; -o consumer.o -c consumer.cpp&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;c++ -o consumer&amp;nbsp; libarchiveExtras.a libarchive.a libserialization.a&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="Ke54nc799Cu7f-K-FsO3-1">
+                    <mxGeometry x="160" y="1255" width="480" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="pkhNUyzVfa8_4iN3zCDY-3" value="&lt;span&gt;-D&lt;/span&gt;&lt;font color=&quot;#ff3333&quot;&gt;USING_ARCHIVE_LIB&lt;/font&gt;&lt;br&gt;&lt;span&gt;-D&lt;/span&gt;&lt;font color=&quot;#ff3333&quot;&gt;USING_SERIALIZATION_LIB&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="Ke54nc799Cu7f-K-FsO3-1">
+                    <mxGeometry x="420" y="1145" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pkhNUyzVfa8_4iN3zCDY-4" value="&lt;span&gt;-D&lt;/span&gt;&lt;font color=&quot;#ff3333&quot;&gt;USING_ARCHIVE_LIB&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="Ke54nc799Cu7f-K-FsO3-1">
+                    <mxGeometry x="170" y="1145" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="pkhNUyzVfa8_4iN3zCDY-5" value="&lt;span&gt;target_compile_definitions(&lt;/span&gt;&lt;font color=&quot;#994c00&quot;&gt;INTERFACE&lt;/font&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;font color=&quot;#ff3333&quot;&gt;USING_SERIALIZATION_LIB&lt;/font&gt;&lt;span&gt;)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="Ke54nc799Cu7f-K-FsO3-1">
+                    <mxGeometry x="710" y="1200" width="390" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="pkhNUyzVfa8_4iN3zCDY-6" value="&lt;span&gt;target_compile_definitions(&lt;/span&gt;&lt;font color=&quot;#994c00&quot;&gt;INTERFACE&lt;/font&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;font color=&quot;#ff3333&quot;&gt;USING_ARCHIVE_LIB&lt;/font&gt;&lt;span&gt;)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="Ke54nc799Cu7f-K-FsO3-1">
+                    <mxGeometry x="710" y="1090" width="360" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-22" value="a" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="270" y="508.75" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-25" value="b" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="500" y="508.75" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" source="Ke54nc799Cu7f-K-FsO3-22" target="Ke54nc799Cu7f-K-FsO3-25" edge="1">
+                    <mxGeometry x="270" y="458.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-21" value="public" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Ke54nc799Cu7f-K-FsO3-20" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0364" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-26" value="c" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="720" y="508.75" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" source="Ke54nc799Cu7f-K-FsO3-25" target="Ke54nc799Cu7f-K-FsO3-26" edge="1">
+                    <mxGeometry x="270" y="458.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-24" value="&lt;font color=&quot;#ff3333&quot;&gt;priavte&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Ke54nc799Cu7f-K-FsO3-23" vertex="1" connectable="0">
+                    <mxGeometry x="0.04" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-27" value="c++ -fPIC -shared -Wl,-soname,liba.so -o liba.so a.cxx.o libb.so" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="365" y="588.75" width="350" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-31" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#CCCCCC;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="190" y="290" width="725" height="157.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-11" value="a" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="270" y="323.75" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-12" value="b" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="500" y="323.75" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" source="Ke54nc799Cu7f-K-FsO3-11" target="Ke54nc799Cu7f-K-FsO3-12" edge="1">
+                    <mxGeometry x="270" y="273.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-16" value="public" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Ke54nc799Cu7f-K-FsO3-14" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0364" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-13" value="c" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="720" y="323.75" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Ke54nc799Cu7f-K-FsO3-1" source="Ke54nc799Cu7f-K-FsO3-12" target="Ke54nc799Cu7f-K-FsO3-13" edge="1">
+                    <mxGeometry x="270" y="273.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-17" value="public" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Ke54nc799Cu7f-K-FsO3-15" vertex="1" connectable="0">
+                    <mxGeometry x="0.04" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ke54nc799Cu7f-K-FsO3-18" value="c++ -fPIC -shared -Wl,-soname,liba.so -o liba.so a.cxx.o libb.so &lt;font color=&quot;#ff3333&quot;&gt;libc.so&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="Ke54nc799Cu7f-K-FsO3-1" vertex="1">
+                    <mxGeometry x="370" y="403.75" width="390" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

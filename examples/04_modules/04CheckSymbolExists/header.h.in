@@ -1,0 +1,2 @@
+#cmakedefine HAVE_SEEK_SET ${HAVE_SEEK_SET}
+#cmakedefine HAVE_FOPEN ${HAVE_FOPEN}

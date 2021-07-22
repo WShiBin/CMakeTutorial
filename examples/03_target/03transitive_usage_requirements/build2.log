@@ -1,0 +1,46 @@
+/usr/local/Cellar/cmake/3.20.5/bin/cmake -S/Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements -B/Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/Cellar/cmake/3.20.5/bin/cmake -E cmake_progress_start /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build/CMakeFiles /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build//CMakeFiles/progress.marks
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/Makefile2 all
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/archive.dir/build.make CMakeFiles/archive.dir/depend
+cd /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build && /usr/local/Cellar/cmake/3.20.5/bin/cmake -E cmake_depends "Unix Makefiles" /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build/CMakeFiles/archive.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/archive.dir/build.make CMakeFiles/archive.dir/build
+[ 12%] Building CXX object CMakeFiles/archive.dir/archive.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -Darchive_EXPORTS  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -fPIC -MD -MT CMakeFiles/archive.dir/archive.cpp.o -MF CMakeFiles/archive.dir/archive.cpp.o.d -o CMakeFiles/archive.dir/archive.cpp.o -c /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/archive.cpp
+[ 25%] Linking CXX shared library libarchive.dylib
+/usr/local/Cellar/cmake/3.20.5/bin/cmake -E cmake_link_script CMakeFiles/archive.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -dynamiclib -Wl,-headerpad_max_install_names -L/usr/local/opt/icu4c/lib -o libarchive.dylib -install_name @rpath/libarchive.dylib CMakeFiles/archive.dir/archive.cpp.o
+[ 25%] Built target archive
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/serialization.dir/build.make CMakeFiles/serialization.dir/depend
+cd /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build && /usr/local/Cellar/cmake/3.20.5/bin/cmake -E cmake_depends "Unix Makefiles" /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build/CMakeFiles/serialization.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/serialization.dir/build.make CMakeFiles/serialization.dir/build
+[ 37%] Building CXX object CMakeFiles/serialization.dir/serialization.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -Dserialization_EXPORTS  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -fPIC -MD -MT CMakeFiles/serialization.dir/serialization.cpp.o -MF CMakeFiles/serialization.dir/serialization.cpp.o.d -o CMakeFiles/serialization.dir/serialization.cpp.o -c /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/serialization.cpp
+[ 50%] Linking CXX shared library libserialization.dylib
+/usr/local/Cellar/cmake/3.20.5/bin/cmake -E cmake_link_script CMakeFiles/serialization.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -dynamiclib -Wl,-headerpad_max_install_names -L/usr/local/opt/icu4c/lib -o libserialization.dylib -install_name @rpath/libserialization.dylib CMakeFiles/serialization.dir/serialization.cpp.o
+[ 50%] Built target serialization
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/archiveExtras.dir/build.make CMakeFiles/archiveExtras.dir/depend
+cd /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build && /usr/local/Cellar/cmake/3.20.5/bin/cmake -E cmake_depends "Unix Makefiles" /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build/CMakeFiles/archiveExtras.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/archiveExtras.dir/build.make CMakeFiles/archiveExtras.dir/build
+[ 62%] Building CXX object CMakeFiles/archiveExtras.dir/extras.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DUSING_ARCHIVE_LIB -DUSING_SERIALIZATION_LIB -DarchiveExtras_EXPORTS  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -fPIC -MD -MT CMakeFiles/archiveExtras.dir/extras.cpp.o -MF CMakeFiles/archiveExtras.dir/extras.cpp.o.d -o CMakeFiles/archiveExtras.dir/extras.cpp.o -c /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/extras.cpp
+[ 75%] Linking CXX shared library libarchiveExtras.dylib
+/usr/local/Cellar/cmake/3.20.5/bin/cmake -E cmake_link_script CMakeFiles/archiveExtras.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -dynamiclib -Wl,-headerpad_max_install_names -L/usr/local/opt/icu4c/lib -o libarchiveExtras.dylib -install_name @rpath/libarchiveExtras.dylib CMakeFiles/archiveExtras.dir/extras.cpp.o  -Wl,-rpath,/Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build libarchive.dylib libserialization.dylib
+[ 75%] Built target archiveExtras
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/consumer.dir/build.make CMakeFiles/consumer.dir/depend
+cd /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build && /usr/local/Cellar/cmake/3.20.5/bin/cmake -E cmake_depends "Unix Makefiles" /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build/CMakeFiles/consumer.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/consumer.dir/build.make CMakeFiles/consumer.dir/build
+[ 87%] Building CXX object CMakeFiles/consumer.dir/consumer.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DUSING_ARCHIVE_LIB  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -MD -MT CMakeFiles/consumer.dir/consumer.cpp.o -MF CMakeFiles/consumer.dir/consumer.cpp.o.d -o CMakeFiles/consumer.dir/consumer.cpp.o -c /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/consumer.cpp
+[100%] Linking CXX executable consumer
+/usr/local/Cellar/cmake/3.20.5/bin/cmake -E cmake_link_script CMakeFiles/consumer.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/icu4c/lib CMakeFiles/consumer.dir/consumer.cpp.o -o consumer  -Wl,-rpath,/Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build libarchiveExtras.dylib libarchive.dylib
+[100%] Built target consumer
+/usr/local/Cellar/cmake/3.20.5/bin/cmake -E cmake_progress_start /Users/shibin/repo/CMakeTutorial/examples/03_target/03transitive_usage_requirements/build/CMakeFiles 0
+
+
+
+
+
+c++  -o consumer libarchiveExtras.dylib libarchive.dylib
