@@ -37,7 +37,7 @@ build system构建的目标为了产生**可执行程序**,**动态库**,**静�
 * 编译器/链接器特性
 * 链接库
 
-### 类似面向对象思想,创建target(对象)
+### 类似面向对象思想，创建target(对象)
 
 构造函数：
 
@@ -47,19 +47,50 @@ build system构建的目标为了产生**可执行程序**,**动态库**,**静�
 成员函数：
 
 - target_sources() 编译源文件
-- target_include_directories() 头文件路径
+- **target_include_directories()** 头文件路径
 - target_compile_definitions() 编译器传参
 - target_compile_features() 编译特性`cxx_lambdas/cxx_range_for/...`
-- target_compile_options() 编译选项
-- target_link_libraries() 链接库
+- **target_compile_options()** 编译选项
+- **target_link_libraries()** 链接库
 - target_link_options() 链接选项
 - target_link_directories() 链接库的目录
-- get_target_property()
-- set_target_properties()
+- get_target_property() 获取目标的属性
+- **set_target_properties()** 设置目标的属性
 
 成员变量
 
 - [Target properties（太多）](https://cmake.org/cmake/help/latest/manual/cmake-properties.7.html#id4)
+
+### 示例
+
+todo：有库有可执行程序
+
+
+
+### 动态库版本
+
+todo：
+
+动态库的版本信息由 VERSION 和 SOVERSION 目标属性定义
+
+* VERSION属性设置为完整的 major.minor.patch 格式
+* SOVERSION属性设置为major
+
+```cmake
+add_library(mystuff SHARED source1.cpp ...) 
+set_target_properties(mystuff PROPERTIES
+	VERSION 2.4.3
+	SOVERSION 2
+)
+```
+
+
+
+```
+libmystuff.so.2.4.3
+libmystuff.so.2 --> libmystuff.so.2.4.3
+libmystuff.so --> libmystuff.so.2
+```
 
 
 
@@ -156,14 +187,14 @@ c++ -o consumer libarchiveExtras.a libarchive.a libserialization.a
 
 
 
-## CMake中的参数传递
+## CMake中的参数传递问题
 
 如何通过cmake命令去影响编译哪些代码
 
 1. cmake命令参数 --> CMakeLists.txt
 2. CMakeLists.txt --> C/CXX代码中
 
-### 1. cmake命令参数传递到CMakeLists.txt文件中
+### cmake命令参数传递到CMakeLists.txt文件中
 
 ```bash
 $ cmake --help
@@ -172,9 +203,9 @@ Options
   -D <var>[:<type>]=<value>    = Create or update a cmake cache entry. # cmake -D CMAKE_BUILD_TYPE=Debug ..
 ```
 
-### 2. CMakeLists.txt --> C/CXX代码中
+### CMakeLists.txt --> C/CXX代码中
 
-示例: 通过cmake命令行去控制代码中的日志级别
+#### 示例1: 通过cmake命令行去控制代码中的日志级别
 
 ```c
 #include <stdio.h>
@@ -202,7 +233,7 @@ int main(int argc, char* argv[]) {
 
 流程: cmake命令行 --> CMakeLists.txt --> 生成头文件 --> C/CXX代码
 
-`configfile命令`:通过input文件生成output(头文件), 并且可以把cmake中的变量写入到output中;input文件一般用`in`后缀,表示input
+`config_file命令`：通过input文件生成output(头文件)，并且可以把cmake中的变量写入到output中；input文件一般用`in`后缀，表示input输入文件
 
 ```cmake
 cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
@@ -270,7 +301,11 @@ debug:
 	./build/arguments
 ```
 
+#### 示例2：指定项目版本号
 
+项目的版本定义在CMakeLists.txt文件中，代码中如何获取版本号
+
+todo：
 
 **[add_library](dfile:///Users/shibin/Library/Application Support/Dash/DocSets/CMake/CMake.docset/Contents/Resources/Documents/cmake.org/cmake/help/v3.20/command/add_library.html#add-library)**
 
