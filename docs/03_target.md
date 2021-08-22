@@ -77,7 +77,7 @@ todo：
 * SOVERSION属性设置为major
 
 ```cmake
-add_library(mystuff SHARED source1.cpp ...) 
+add_library(mystuff SHARED source1.cpp ...)
 set_target_properties(mystuff PROPERTIES
 	VERSION 2.4.3
 	SOVERSION 2
@@ -123,12 +123,12 @@ libmystuff.so --> libmystuff.so.2
 ```cmake
 # PUBLIC
 ## c++ -fPIC -shared -Wl,-soname,liba.so -o liba.so a.cxx.o libb.so libc.so
-target_link_libraries(b PUBLIC c) 
+target_link_libraries(b PUBLIC c)
 target_link_libraries(a PUBLIC b)
 
 # PRIVATE/PUBLIC
 ## c++ -fPIC -shared -Wl,-soname,liba.so -o liba.so a.cxx.o libb.so
-target_link_libraries(b PRIVATE c) 
+target_link_libraries(b PRIVATE c)
 target_link_libraries(a PUBLIC b)
 ```
 

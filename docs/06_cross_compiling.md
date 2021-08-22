@@ -18,9 +18,9 @@ cmake -DCMAKE_TOOLCHAIN_FILE=myToolchain.cmake path/to/source
 
 工具链文件内容：
 
-* 描述目标系统的基本信息。 
-* 提供工具的路径(通常是编译器的路径)。 
-* 设置工具的默认标志(通常只针对编译器，也可能是链接器)。 
+* 描述目标系统的基本信息。
+* 提供工具的路径(通常是编译器的路径)。
+* 设置工具的默认标志(通常只针对编译器，也可能是链接器)。
 * 交叉编译的情况下设置目标平台文件系统根目录的位置。
 
 ### 定义目标系统
@@ -35,10 +35,10 @@ cmake -DCMAKE_TOOLCHAIN_FILE=myToolchain.cmake path/to/source
 ### 指定工具路径（编译器）
 
 ```cmake
-set(CMAKE_C_COMPILER gcc) 
+set(CMAKE_C_COMPILER gcc)
 set(CMAKE_CXX_COMPILER g++)
-set(extraOpts "-Wall -Wextra") 
-set(CMAKE_C_FLAGS_DEBUG_INIT ${extraOpts}) 
+set(extraOpts "-Wall -Wextra")
+set(CMAKE_C_FLAGS_DEBUG_INIT ${extraOpts})
 set(CMAKE_CXX_FLAGS_DEBUG_INIT ${extraOpts})
 ```
 
